@@ -1,0 +1,72 @@
+[
+    {
+      "username": "John Smith",
+      "profile_picture": "https://randomuser.me/api/portraits/men/1.jpg",
+      "bio": "Adventure guide with a focus on outdoor sports and extreme activities.",
+      "email": "john.smith@example.com",
+      "password": "John1234!"
+    },
+    {
+      "username": "Emily Johnson",
+      "profile_picture": "https://randomuser.me/api/portraits/women/2.jpg",
+      "bio": "Experienced tour guide specializing in cultural and historical walks.",
+      "email": "emily.johnson@example.com",
+      "password": "Emily1234!"
+    },
+    {
+      "username": "Michael Brown",
+      "profile_picture": "https://randomuser.me/api/portraits/men/3.jpg",
+      "bio": "A passionate guide offering culinary tours and wine tastings.",
+      "email": "michael.brown@example.com",
+      "password": "Michael1234!"
+    },
+    {
+      "username": "Sarah Williams",
+      "profile_picture": "https://randomuser.me/api/portraits/women/4.jpg",
+      "bio": "History lover guiding visitors through the most iconic landmarks in Europe.",
+      "email": "sarah.williams@example.com",
+      "password": "Sarah1234!"
+    },
+    {
+      "username": "David Taylor",
+      "profile_picture": "https://randomuser.me/api/portraits/men/5.jpg",
+      "bio": "Expert wildlife and nature guide, specializing in safaris and bird watching.",
+      "email": "david.taylor@example.com",
+      "password": "David1234!"
+    },
+    {
+      "username": "Olivia Miller",
+      "profile_picture": "https://randomuser.me/api/portraits/women/6.jpg",
+      "bio": "Outdoor enthusiast offering mountain and trail guiding experiences.",
+      "email": "olivia.miller@example.com",
+      "password": "Olivia1234!"
+    },
+    {
+      "username": "James Wilson",
+      "profile_picture": "https://randomuser.me/api/portraits/men/7.jpg",
+      "bio": "An expert in family-friendly tours around historical sites.",
+      "email": "james.wilson@example.com",
+      "password": "James1234!"
+    },
+    {
+      "username": "Sophia Moore",
+      "profile_picture": "https://randomuser.me/api/portraits/women/8.jpg",
+      "bio": "Passionate about gastronomy, offering culinary tours and cooking classes.",
+      "email": "sophia.moore@example.com",
+      "password": "Sophia1234!"
+    },
+    {
+      "username": "William Anderson",
+      "profile_picture": "https://randomuser.me/api/portraits/men/9.jpg",
+      "bio": "Providing unique cultural experiences through immersive local tours.",
+      "email": "william.anderson@example.com",
+      "password": "William1234!"
+    },
+    {
+      "username": "Isabella Thomas",
+      "profile_picture": "https://randomuser.me/api/portraits/women/10.jpg",
+      "bio": "Tour guide with expertise in architecture and ancient civilizations.",
+      "email": "isabella.thomas@example.com",
+      "password": "Isabella1234!"
+    }
+  ]

@@ -1,0 +1,453 @@
+[
+        [   
+            {
+                "guide_id": 3,
+                "title": "Explore the Eternal City: Full-Day Rome Guided Tour",
+                "description": "Experience the beauty and history of Rome in a single day! This comprehensive guided tour covers the city’s most iconic landmarks, including the Colosseum, Roman Forum, Vatican City, Trevi Fountain, and Piazza Navona. Walk through centuries of history and discover the vibrant culture of the Eternal City. With a knowledgeable guide, you'll enjoy fascinating stories and lesser-known facts about Rome’s ancient, Renaissance, and modern eras.",
+                "location": {
+                    "city": "Rome",
+                    "meeting_point": "Piazza Venezia, Rome",
+                    "coordinates": {
+                        "latitude": 41.895466,
+                        "longitude": 12.482324
+                    }
+                },
+                "duration": "08:00",
+                "price": 120.00,
+                "date": "2025-12-19",
+                "categories": "CULTURE",
+                "languages": [
+                    "FRENCH",
+                    "ENGLISH",
+                    "ITALIAN",
+                    "SPANISH"
+                ]
+            },
+            {
+                "guide_id": 1,
+                "title": "Guided Tour of the Colosseum",
+                "description": "Step back in time and explore the magnificent Colosseum in Rome, one of the greatest symbols of Ancient Rome. This guided tour will take you through the history of gladiators, emperors, and the architectural marvels of this iconic structure. Learn about the grand spectacles that once captivated audiences, from gladiatorial combat to animal hunts. With a knowledgeable guide, you will uncover the secrets of the Colosseum and its place in Roman history.",
+                "location": {
+                    "city": "Rome",
+                    "meeting_point": "Colosseum Entrance, Rome",
+                    "coordinates": {
+                        "latitude": 41.890210,
+                        "longitude": 12.492231
+                    }
+                },
+                "duration": "02:00",
+                "price": 50.00,
+                "date": "2024-10-15",
+                "categories": "CULTURE",
+                "languages": [
+                    "ENGLISH",
+                    "ITALIAN"
+                ]
+            },
+            {
+                "guide_id": 2,
+                "title": "Guided Tour of the Great Wall of China",
+                "description": "Walk along one of the most impressive architectural feats in history, the Great Wall of China. This tour will take you through different sections of the Wall, where your guide will share the history of its construction, its strategic importance, and the stories of those who defended China’s northern border. Enjoy stunning views and learn about the ancient history and culture of China.",
+                "location": {
+                    "city": "Beijing",
+                    "meeting_point": "Badaling Great Wall Entrance, Beijing",
+                    "coordinates": {
+                        "latitude": 40.431907,
+                        "longitude": 116.570374
+                    }
+                },
+                "duration": "03:30",
+                "price": 75.00,
+                "date": "2024-10-22",
+                "categories": "NATURE",
+                "languages": [
+                    "ENGLISH",
+                    "SPANISH"
+                ]
+            },
+            {
+                "guide_id": 3,
+                "title": "Guided Tour of Machu Picchu",
+                "description": "Discover the ancient Inca city of Machu Picchu, perched high in the Peruvian Andes. On this tour, your expert guide will reveal the mysteries of this UNESCO World Heritage site, including its construction, significance, and the fascinating history of the Inca Empire. Enjoy panoramic views and learn about the culture and lifestyle of the people who once lived here.",
+                "location": {
+                    "city": "Cusco",
+                    "meeting_point": "Machu Picchu Entrance, Cusco",
+                    "coordinates": {
+                        "latitude": -13.163068,
+                        "longitude": -72.545128
+                    }
+                },
+                "duration": "04:00",
+                "price": 90.00,
+                "date": "2024-10-28",
+                "categories": "NATURE",
+                "languages": [
+                    "ENGLISH",
+                    "SPANISH",
+                    "PORTUGUESE"
+                ]
+            },
+            {
+                "guide_id": 4,
+                "title": "Guided Tour of the Pyramids of Giza",
+                "description": "Explore the ancient wonders of Egypt with a tour of the Pyramids of Giza. Your guide will take you through the rich history of these incredible structures, built as tombs for the pharaohs over 4,000 years ago. Discover the secrets behind their construction and the role they played in ancient Egyptian culture, and marvel at the sheer scale and precision of the pyramids.",
+                "location": {
+                    "city": "Cairo",
+                    "meeting_point": "Giza Plateau Entrance, Cairo",
+                    "coordinates": {
+                        "latitude": 29.979235,
+                        "longitude": 31.134202
+                    }
+                },
+                "duration": "03:00",
+                "price": 60.00,
+                "date": "2024-11-05",
+                "categories": "CULTURE",
+                "languages": [
+                    "ENGLISH",
+                    "PORTUGUESE"
+                ]
+            },
+            {
+                "guide_id": 5,
+                "title": "Guided Tour of the Eiffel Tower",
+                "description": "Discover the fascinating history of the Eiffel Tower with a guided tour that includes access to different levels for panoramic views of Paris. This iconic landmark, which symbolizes the city itself, has a rich and intriguing history that your guide will narrate throughout the visit. As you ascend, you'll learn about its construction, the technical challenges it presented, and the many historical events it has witnessed. From the top, enjoy breathtaking views of Paris and its famous landmarks.",
+                "location": {
+                    "city": "Paris",
+                    "meeting_point": "Eiffel Tower Esplanade, Paris",
+                    "coordinates": {
+                        "latitude": 48.858370,
+                        "longitude": 2.294481
+                    }
+                },
+                "duration": "02:30",
+                "price": 65.00,
+                "date": "2024-11-10",
+                "categories": "CULTURE",
+                "languages": [
+                    "ENGLISH",
+                    "FRENCH",
+                    "SPANISH"
+                ]
+            },
+            {
+                "guide_id": 6,
+                "title": "Guided Tour of the Sydney Opera House",
+                "description": "Experience the world-renowned Sydney Opera House on a guided tour, where you’ll learn about its striking architecture and history. Your guide will take you inside the iconic building, sharing insights into its design, construction, and cultural significance. Discover the magic behind its concerts and performances, and explore the opera house’s role as a symbol of Australia’s artistic and cultural identity.",
+                "location": {
+                    "city": "Sydney",
+                    "meeting_point": "Sydney Opera House Entrance, Sydney",
+                    "coordinates": {
+                        "latitude": -33.856784,
+                        "longitude": 151.215297
+                    }
+                },
+                "duration": "01:30",
+                "price": 55.00,
+                "date": "25-11-2024",
+                "categories": "CULTURE",
+                "languages": [
+                    "ENGLISH",
+                    "SPANISH"
+                ]
+            },
+            {
+                "guide_id": 7,
+                "title": "Safari Adventure in Kruger National Park",
+                "description": "Embark on a thrilling family safari adventure in Kruger National Park. This guided tour is perfect for families seeking an exciting wildlife experience. Explore the park's diverse ecosystems and get up close to the Big Five, all while learning about the wildlife and conservation efforts in the park. Your guide will ensure a safe and educational experience for everyone in the family, with plenty of opportunities for memorable photos.",
+                "location": {
+                    "city": "Kruger National Park",
+                    "meeting_point": "Kruger National Park Entrance",
+                    "coordinates": {
+                        "latitude": -24.0167,
+                        "longitude": 31.5820
+                    }
+                },
+                "duration": "05:00",
+                "price": 180.00,
+                "date": "2024-12-05",
+                "categories": "FAMILY",
+                "languages": [
+                    "ENGLISH",
+                    "FRENCH",
+                    "SPANISH"
+                ]
+            },
+            {
+                "guide_id": 8,
+                "title": "Family Tour of Legoland Windsor",
+                "description": "A fun-filled day for families at Legoland Windsor. This guided tour will take you through the park’s most exciting attractions, from Lego Kingdoms to the Pirate's Landing. Perfect for children and adults alike, the tour includes plenty of opportunities for fun and learning, with interactive experiences that bring the world of Lego to life. Your guide will provide tips for maximizing your time and making the most of the attractions.",
+                "location": {
+                    "city": "Windsor",
+                    "meeting_point": "Legoland Windsor Entrance",
+                    "coordinates": {
+                        "latitude": 51.4790,
+                        "longitude": -0.6061
+                    }
+                },
+                "duration": "04:00",
+                "price": 100.00,
+                "date": "2024-12-10",
+                "categories": "FAMILY",
+                "languages": [
+                    "ENGLISH",
+                    "FRENCH"
+                ]
+            },
+            {
+                "guide_id": 9,
+                "title": "Family Tour of Kyoto’s Arashiyama Bamboo Grove",
+                "description": "Take your family on a peaceful journey through Kyoto’s Arashiyama Bamboo Grove. This guided tour is perfect for families seeking a tranquil and scenic experience. Walk through the towering bamboo stalks, learn about the history of the grove, and discover hidden gems around the area. Your guide will ensure that the experience is both educational and relaxing, making it suitable for all ages.",
+                "location": {
+                    "city": "Kyoto",
+                    "meeting_point": "Arashiyama Bamboo Grove Entrance",
+                    "coordinates": {
+                        "latitude": 35.0095,
+                        "longitude": 135.6690
+                    }
+                },
+                "duration": "03:00",
+                "price": 75.00,
+                "date": "2024-12-15",
+                "categories": "FAMILY",
+                "languages": [
+                    "ENGLISH",
+                    "ITALIAN",
+                    "PORTUGUESE"
+                ]
+            },
+            {
+                "guide_id": 7,
+                "title": "Guided Tour of the Taj Mahal",
+                "description": "Marvel at the beauty and intricate architecture of the Taj Mahal, one of the most iconic landmarks in the world. This tour will guide you through the history of the Taj Mahal, its architectural design, and the love story behind its creation. Learn about the Mughal Empire and its cultural significance, while enjoying breathtaking views of the monument.",
+                "location": {
+                    "city": "Agra",
+                    "meeting_point": "Taj Mahal Entrance, Agra",
+                    "coordinates": {
+                        "latitude": 27.175144,
+                        "longitude": 78.042142
+                    }
+                },
+                "duration": "02:00",
+                "price": 50.00,
+                "date": "02-12-2024",
+                "categories": "CULTURE",
+                "languages": [
+                    "ENGLISH",
+                    "FRENCH"
+                ]
+            },
+            {
+                "guide_id": 9,
+                "title": "Guided Tour of Christ the Redeemer",
+                "description": "Visit the iconic Christ the Redeemer statue in Rio de Janeiro, one of the New Seven Wonders of the World. On this guided tour, you will learn about the history and symbolism behind the statue, its construction, and its role in Brazilian culture. Enjoy breathtaking views of the city and surrounding mountains from the top of Corcovado Mountain.",
+                "location": {
+                    "city": "Rio de Janeiro",
+                    "meeting_point": "Christ the Redeemer Entrance, Rio de Janeiro",
+                    "coordinates": {
+                        "latitude": -22.951917,
+                        "longitude": -43.210487
+                    }
+                },
+                "duration": "02:00",
+                "price": 70.00,
+                "date": "15-12-2024",
+                "categories": "CULTURE",
+                "languages": [
+                    "ENGLISH",
+                    "PORTUGUESE"
+                ]
+            },
+            {
+                "guide_id": 7,
+                "title": "Guided Tour of the Acropolis of Athens",
+                "description": "Step into the ancient world with a guided tour of the Acropolis, Athens' most famous archaeological site. From the Parthenon to the Temple of Athena Nike, learn about the culture and history of Ancient Greece and how these monuments shaped the world we live in today. Your guide will provide insight into the myths and legends associated with these iconic structures.",
+                "location": {
+                    "city": "Athens",
+                    "meeting_point": "Acropolis Entrance, Athens",
+                    "coordinates": {
+                        "latitude": 37.971532,
+                        "longitude": 23.725749
+                    }
+                },
+                "duration": "02:30",
+                "price": 50.00,
+                "date": "2024-11-20",
+                "categories": "CULTURE",
+                "languages": [
+                    "ENGLISH",
+                    "PORTUGUESE",
+                    "SPANISH"
+                ]
+            },
+            {
+                "guide_id": 8,
+                "title": "Gastronomic Tour of Tuscany",
+                "description": "Indulge in the flavors of Tuscany with a guided gastronomic tour. Your expert guide will take you through the vineyards, olive groves, and charming villages of the Tuscan countryside. Enjoy wine tastings, local delicacies, and learn about the region’s rich culinary heritage. This tour is perfect for food lovers and wine connoisseurs looking to experience the best of Tuscany’s gastronomy.",
+                "location": {
+                    "city": "Florence",
+                    "meeting_point": "Piazza della Signoria, Florence",
+                    "coordinates": {
+                        "latitude": 43.769562,
+                        "longitude": 11.255814
+                    }
+                },
+                "duration": "05:00",
+                "price": 150.00,
+                "date": "2024-12-01",
+                "categories": "GASTRONOMY",
+                "languages": [
+                    "ENGLISH",
+                    "ITALIAN",
+                    "SPANISH"
+                ]
+            },
+            {
+                "guide_id": 10,
+                "title": "Guided Tour of the Santorini Volcano",
+                "description": "Embark on an unforgettable adventure to the Santorini Volcano, where you will discover the geological wonders of this stunning island. Your guide will explain the volcanic history of the island, the eruption that shaped the landscape, and the importance of the volcano in local mythology. Hike along the caldera and enjoy breathtaking views of the Aegean Sea.",
+                "location": {
+                    "city": "Santorini",
+                    "meeting_point": "Fira, Santorini",
+                    "coordinates": {
+                        "latitude": 36.423711,
+                        "longitude": 25.461509
+                    }
+                },
+                "duration": "03:00",
+                "price": 85.00,
+                "date": "20-12-2024",
+                "categories": "NATURE",
+                "languages": [
+                    "ENGLISH",
+                    "ITALIAN"
+                ]
+            },
+            {
+                "guide_id": 9,
+                "title": "Drama Tour in Shakespeare's London",
+                "description": "Immerse yourself in the world of Shakespeare with a guided tour of London's most iconic theaters and locations associated with the great playwright. Your guide will take you to places like the Globe Theatre and discuss the drama and intrigue behind Shakespeare's works. Learn about the history of the theater and how it shaped the art of performance in London.",
+                "location": {
+                    "city": "London",
+                    "meeting_point": "Shakespeare's Globe Theatre, London",
+                    "coordinates": {
+                        "latitude": 51.508112,
+                        "longitude": -0.097678
+                    }
+                },
+                "duration": "02:00",
+                "price": 40.00,
+                "date": "2024-12-10",
+                "categories": "DRAMA",
+                "languages": [
+                    "ENGLISH",
+                    "SPANISH"
+                ]
+            },
+            {
+                "guide_id": 11,
+                "title": "Underground Caves Exploration in Waitomo",
+                "description": "Discover the underground world of Waitomo Caves in New Zealand, where families can experience a magical boat ride through glowworm-lit caves. This unusual guided tour takes you through ancient limestone caves, featuring stunning formations and the bioluminescent glowworms that light up the darkness. It’s an exciting and otherworldly adventure, perfect for families seeking something truly unique.",
+                "location": {
+                    "city": "Waitomo",
+                    "meeting_point": "Waitomo Caves Visitor Centre",
+                    "coordinates": {
+                        "latitude": -38.2901,
+                        "longitude": 175.1156
+                    }
+                },
+                "duration": "03:30",
+                "price": 120.00,
+                "date": "2024-12-01",
+                "categories": "UNUSUAL",
+                "languages": [
+                    "ENGLISH",
+                    "FRENCH"
+                ]
+            },
+            {
+                "guide_id": 12,
+                "title": "Ghost Tour of Edinburgh’s Old Town",
+                "description": "Step into the eerie side of Edinburgh’s Old Town with this unusual family-friendly ghost tour. Explore the haunted streets and hidden alleyways, hear chilling tales of the city’s past, and discover the eerie history that surrounds one of the most haunted cities in Europe. Your guide will share spine-tingling stories that are suitable for older children and adults alike, making this an unforgettable experience for the whole family.",
+                "location": {
+                    "city": "Edinburgh",
+                    "meeting_point": "Royal Mile, Edinburgh",
+                    "coordinates": {
+                        "latitude": 55.9530,
+                        "longitude": -3.1883
+                    }
+                },
+                "duration": "02:00",
+                "price": 50.00,
+                "date": "2024-12-10",
+                "categories": "UNUSUAL",
+                "languages": [
+                    "ENGLISH",
+                    "SPANISH"
+                ]
+            },
+            {
+                "guide_id": 13,
+                "title": "Ice Hotel Experience in Jukkasjärvi",
+                "description": "For a truly unique family experience, visit the Ice Hotel in Jukkasjärvi, Sweden. This unusual tour will take your family through the world’s first ice hotel, where everything—from the furniture to the walls—is made entirely from ice and snow. Explore the icy art, learn about the history of this frozen wonderland, and enjoy a hot drink in the ice bar to warm up after the tour. This adventure is perfect for families who love winter magic and icy environments.",
+                "location": {
+                    "city": "Jukkasjärvi",
+                    "meeting_point": "Ice Hotel Entrance",
+                    "coordinates": {
+                        "latitude": 67.8514,
+                        "longitude": 20.8366
+                    }
+                },
+                "duration": "03:00",
+                "price": 140.00,
+                "date": "2024-12-15",
+                "categories": "UNUSUAL",
+                "languages": [
+                    "ENGLISH",
+                    "SWEDISH"
+                ]
+            },
+            {
+                "guide_id": 14,
+                "title": "Hot Air Balloon Ride over Cappadocia",
+                "description": "Float over the surreal landscapes of Cappadocia, Turkey, in a hot air balloon. This unusual family tour offers a unique perspective of the fairy-tale-like rock formations, ancient cave dwellings, and scenic valleys. As you soar over this UNESCO World Heritage site, you’ll have the opportunity to witness the incredible sunrise views and take in the beauty of one of the world’s most striking landscapes. A family adventure like no other.",
+                "location": {
+                    "city": "Göreme",
+                    "meeting_point": "Cappadocia Ballooning Launch Site",
+                    "coordinates": {
+                        "latitude": 38.6430,
+                        "longitude": 34.8319
+                    }
+                },
+                "duration": "02:30",
+                "price": 200.00,
+                "date": "2024-12-20",
+                "categories": "UNUSUAL",
+                "languages": [
+                    "ENGLISH",
+                    "TURKISH"
+                ]
+            },
+            {
+                "guide_id": 15,
+                "title": "Zombie Apocalypse Experience in Las Vegas",
+                "description": "Take part in an interactive, family-friendly Zombie Apocalypse experience in Las Vegas. This unusual guided tour combines fun, adventure, and a bit of spooky action, where you and your family will navigate through a simulated zombie outbreak. With live actors and thrilling special effects, it’s an immersive experience that offers a safe and exciting way to test your survival skills. A great option for families with older children who love adventure and role-play!",
+                "location": {
+                    "city": "Las Vegas",
+                    "meeting_point": "Zombie Apocalypse HQ",
+                    "coordinates": {
+                        "latitude": 36.1699,
+                        "longitude": -115.1398
+                    }
+                },
+                "duration": "02:00",
+                "price": 85.00,
+                "date": "2024-12-25",
+                "categories": "UNUSUAL",
+                "languages": [
+                    "ENGLISH",
+                    "SPANISH"
+                ]
+            }
+        ]
+    ]

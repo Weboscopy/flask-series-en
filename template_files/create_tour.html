@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find your Tour - Create</title>
+  <link rel="icon" type="image/x-icon" href="./images/guide.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js"></script>
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script defer src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster-src.js"></script>
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+  <main>
+    <section id="section_create_tour">
+      <h1>Create your tour</h1>
+      <form action="/tour/create-tour" method="POST" class="form_tour" enctype="multipart/form-data">
+        <h3>What's the name of your tour?</h3>
+        <fieldset class="group">
+          <img src="./images/type.svg" class="icon" alt="icon-type">
+          <input type="text" name="title" placeholder="Tour name" autocomplete="off">
+        </fieldset>
+        <h3>What's on the agenda?</h3>
+        <fieldset class="group">
+          <img src="./images/align-left.svg" class="icon icon-flex-start" alt="icon-align">
+          <textarea name="description" placeholder="Tour description"></textarea>
+        </fieldset>
+        <h3>Which city is the tour in?</h3>
+        <fieldset class="group group_medium group_suggestions">
+          <img src="./images/map-pin.svg" class="icon" alt="icon-location">
+          <input type="text" id="input_city" name="city" placeholder="City" autocomplete="off">
+          <ul class="list_suggestions" id="suggestions_city">
+          </ul>
+        </fieldset>
+        <h3>Where is the meeting point?</h3>
+        <fieldset class="group group_medium group_suggestions">
+          <img src="./images/map-pin.svg" class="icon" alt="icon-location">
+          <input type="text" id="input_address" name="address" placeholder="Address" autocomplete="off">
+          <ul class="list_suggestions" id="suggestions_address">
+          </ul>
+        </fieldset>
+        <h3>When does it take place?</h3>
+        <fieldset class="group group_medium">
+          <img src="./images/calendar.svg" class="icon" alt="icon-calendar">
+          <input type="text" id="input_date" name="date" placeholder="Date" autocomplete="off">
+        </fieldset>
+        <h3>Which category does your tour belong to?</h3>
+        <fieldset class="group group_medium">
+          <img src="./images/list.svg" class="icon" alt="icon-list">
+          <select name="category">
+            <option value="" disabled selected>Categories</option>
+            <option value="CULTURE">Cultural Outings</option>
+            <option value="NATURE">100% Nature Walks</option>
+            <option value="DRAMA">Dramatized Visits</option>
+            <option value="FAMILY">Family-Friendly Adventures</option>
+            <option value="GASTRONOMY">Gastronomy & Tasting</option>
+            <option value="UNUSUAL">Original Experiences</option>
+          </select>
+        </fieldset>
+        <h3>Which languages is your tour available in?</h3>
+        <input type="checkbox" id="english" name="english" checked disabled>
+        <label for="english" class="label_languages">
+          <img src="images/uk.svg" class="icon" alt="icon-en">
+        </label>
+        <input type="checkbox" id="french" name="french">
+        <label for="french" class="label_languages">
+          <img src="images/fr.svg" class="icon" alt="icon-fr">
+        </label>
+        <input type="checkbox" id="spanish" name="sapnish">
+        <label for="spanish" class="label_languages">
+          <img src="images/es.svg" class="icon" alt="icon-es">
+        </label>
+        <input type="checkbox" id="italian" name="italian">
+        <label for="italian" class="label_languages">
+          <img src="images/it.svg" class="icon" alt="icon-it">
+        </label>
+        <input type="checkbox" id="portuguese" name="portuguese">
+        <label for="portuguese" class="label_languages">
+          <img src="images/br.svg" class="icon" alt="icon-pt">
+        </label>
+        <h3>How long does it last?</h3>
+        <fieldset class="group group_small">
+          <img src="./images/clock.svg" class="icon" alt="icon-clock">
+          <input type="text" id="input_duration" name="duration" placeholder="Duration" autocomplete="off" value="1:00">
+        </fieldset>
+        <h3>How much does it cost?</h3>
+        <fieldset class="group group_small">
+          <img src="./images/dollar-sign.svg" class="icon" alt="icon-clock">
+          <input type="number" name="price" placeholder="Price" autocomplete="off" value="0">
+        </fieldset>
+        <h3>Do you have any photos to illustrate your tour?</h3>
+        <fieldset class="group group_medium">
+          <img src="./images/camera.svg" class="icon" alt="icon-camera">
+          <input type="file" name="tour_pictures" accept="image/*" multiple>
+        </fieldset>
+        <button type="submit">
+          <img src="./images/plus-circle.svg" class="icon" alt="icon-plus"><span>Create</span></button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <a href="/home/homepage">
+        <img src="./images/home.svg" alt="icon-home">
+      </a>
+      <a href="/guide/profile">
+        <img src="./images/guide.svg" alt="icon-guide">
+      </a>
+    </nav>
+  </footer>
+</body>
+
+</html>

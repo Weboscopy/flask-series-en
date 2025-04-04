@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find your Tour - Explore</title>
+  <link rel="icon" type="image/x-icon" href="./images/guide.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script defer src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster-src.js"></script>
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+  <main>
+    <section id="section_list_tours">
+      <h1>Explore</h1>
+      <div class="column">
+        <a href="/tour/view-tour/1">
+          <div class="column_left">
+            <img src="./images/rome1.jpg" alt="image-tour-picture">
+          </div>
+          <div class="column_right">
+            <h2>Colosseum Chronicles: Rome’s Iconic Amphitheater</h2>
+            <time><img src="./images/calendar.svg" class="icon" alt="icon-calendar">September 10th</time>
+            <h3>By <strong>John Smith</strong></h3>
+            <h4>65 €</h4>
+          </div>
+        </a>
+        <a href="/tour/view-tour/2">
+          <div class="column_left">
+            <img src="./images/rome2.jpg" alt="image-tour-picture">
+          </div>
+          <div class="column_right">
+            <h2>Pantheon Through the Ages</h2>
+            <time><img src="./images/calendar.svg" class="icon" alt="icon-calendar">September 18th</time>
+            <h3>By <strong>Emily Johnson</strong></h3>
+            <h4>45 €</h4>
+          </div>
+        </a>
+        <a href="/tour/view-tour/3">
+          <div class="column_left">
+            <img src="./images/rome3.jpg" alt="image-tour-picture">
+          </div>
+          <div class="column_right">
+            <h2>Coins, Wishes, and Secrets: The Trevi Experience</h2>
+            <time><img src="./images/calendar.svg" class="icon" alt="icon-calendar">September 20th</time>
+            <h3>By <strong>Michael Brown</strong></h3>
+            <h4>40 €</h4>
+          </div>
+        </a>
+        <a href="/tour/view-tour/4">
+          <div class="column_left">
+            <img src="./images/rome4.jpg" alt="image-tour-picture">
+          </div>
+          <div class="column_right">
+            <h2>The Forum Unveiled: The Rise of Rome</h2>
+            <time><img src="./images/calendar.svg" class="icon" alt="icon-calendar">October 14th</time>
+            <h3>By <strong>Sarah Williams</strong></h3>
+            <h4>90 €</h4>
+          </div>
+        </a>
+        <a href="/tour/view-tour/5">
+          <div class="column_left">
+            <img src="./images/rome5.jpg" alt="image-tour-picture">
+          </div>
+          <div class="column_right">
+            <h2>Echoes of the Empire: A Walk Through Ancient Rome</h2>
+            <time><img src="./images/calendar.svg" class="icon" alt="icon-calendar">October 20th</time>
+            <h3>By <strong>David Taylor</strong></h3>
+            <h4>55 €</h4>
+          </div>
+        </a>
+      </div>
+      <div class="pagination">
+        <a href="/tour/list-tours?page=1" class="page">1</a>
+        ...
+        <a href="/tour/list-tours?page=1" class="page">3</a>
+        <a href="/tour/list-tours?page=1" class="page page_current">4</a>
+        <a href="/tour/list-tours?page=1" class="page">5</a>
+        ...
+        <a href="/tour/list-tours?page=1" class="page">10</a>
+
+      </div>
+      <form action="/tour/list-tours" class="form_search" method="GET">
+        <fieldset class="group group_suggestions">
+          <img src="./images/map-pin.svg" class="icon" alt="icon-location">
+          <input type="text" id="input_city" name="city" placeholder="City" autocomplete="off">
+          <ul class="list_suggestions" id="suggestions_city">
+          </ul>
+        </fieldset>
+        <fieldset class="group">
+          <img src="./images/calendar.svg" class="icon" alt="icon-calendar">
+          <input type="date" id="input_date" name="date" placeholder="Date" autocomplete="off">
+        </fieldset>
+        <fieldset class="group">
+          <img src="./images/list.svg" class="icon" alt="icon-list">
+          <select name="category">
+            <option value="" disabled selected>Categories</option>
+            <option value="CULTURE">Cultural Outings</option>
+            <option value="NATURE">100% Nature Walks</option>
+            <option value="DRAMA">Dramatized Visits</option>
+            <option value="FAMILY">Family-Friendly Adventures</option>
+            <option value="GASTRONOMY">Gastronomy & Tasting</option>
+            <option value="UNUSUAL">Original Experiences</option>
+          </select>
+        </fieldset>
+        <button type="submit" class="btn_search">
+          <img src="./images/search.svg" class="icon" alt="icon-search"> <span>Search</span>
+        </button>
+      </form>
+      <div class="map" id="map_tours"
+        data-coordinates="[[41.89035575243387, 12.492149527314186],[41.89877847180054, 12.476829024571671],[41.90101768007782, 12.48325600210962], [41.892143926655, 12.486437448696867], [41.89888621320488, 12.473127532171052]]"
+        data-titles='["Colosseum Chronicles: Rome’s Iconic Amphitheater", "Pantheon Through the Ages", "Coins, Wishes, and Secrets: The Trevi Experience", "The Forum Unveiled: The Rise of Rome", "Echoes of the Empire: A Walk Through Ancient Rome"]'
+        data-ids="[1, 2, 3, 4, 5]">
+      </div>
+    </section>
+    <button id="btn_scroll">
+      <img src="./images/map.svg" class=" icon" alt="icon-share">
+    </button>
+  </main>
+  <footer>
+    <nav>
+      <a href="/home/homepage">
+        <img src="./images/home.svg" alt="icon-home">
+      </a>
+      <a href="/guide/profile">
+        <img src="./images/guide.svg" alt="icon-guide">
+      </a>
+    </nav>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find your Tour - Edit</title>
+  <link rel="icon" type="image/x-icon" href="./images/guide.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js"></script>
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+  <main>
+    <section id="section_edit_tour">
+      <h1>Edit your tour </h1>
+      <form action="/tour/edit-tour/1" method="POST" class="form_tour" enctype="multipart/form-data">
+        <h3>What's the name of your tour?</h3>
+        <fieldset class="group">
+          <img src="./images/type.svg" class="icon" alt="icon-type">
+          <input type="text" name="title" placeholder="Tour name" autocomplete="off"
+            value="Explore the Eternal City: Full-Day Rome Guided Tour">
+        </fieldset>
+        <h3>What's on the agenda?</h3>
+        <fieldset class="group">
+          <img src="./images/align-left.svg" class="icon icon-flex-start" alt="icon-align">
+          <textarea name="description"
+            placeholder="Description de la visite">Experience the beauty and history of Rome in a single day! This comprehensive guided tour covers the city’s most iconic landmarks, including the Colosseum, Roman Forum, Vatican City, Trevi Fountain, and Piazza Navona. Walk through centuries of history and discover the vibrant culture of the Eternal City. With a knowledgeable guide, you'll enjoy fascinating stories and lesser-known facts about Rome’s ancient, Renaissance, and modern eras.</textarea>
+        </fieldset>
+        <h3>Which city is the tour in?</h3>
+        <fieldset class="group group_medium group_suggestions">
+          <img src="./images/map-pin.svg" class="icon" alt="icon-location">
+          <input type="text" id="input_city" name="city" placeholder="City" autocomplete="off" value="Rome - Lazio">
+          <ul class="list_suggestions" id="suggestions_city">
+          </ul>
+        </fieldset>
+        <h3>Where is the meeting point?</h3>
+        <fieldset class="group group_medium group_suggestions">
+          <img src="./images/map-pin.svg" class="icon" alt="icon-location">
+          <input type="text" id="input_address" name="address" placeholder="Address" autocomplete="off"
+            value="Piazza Venezia-Pigna-Municipio Roma I-Rome-Roma Capitale-Lazio-Italy">
+          <ul class="list_suggestions" id="suggestions_address">
+          </ul>
+        </fieldset>
+        <h3>When does it take place?</h3>
+        <fieldset class="group group_medium">
+          <img src="./images/calendar.svg" class="icon" alt="icon-calendar">
+          <input type="text" id="input_date" name="date" placeholder="Date" autocomplete="off" value="2025-12-19">
+        </fieldset>
+        <h3>Which category does your tour belong to?</h3>
+        <fieldset class="group group_medium">
+          <img src="./images/list.svg" class="icon" alt="icon-list">
+          <select name="category">
+            <option value="" disabled>Categories</option>
+            <option selected value="CULTURE">Cultural Outings</option>
+            <option value="NATURE">100% Nature Walks</option>
+            <option value="DRAMA">Dramatized Visits</option>
+            <option value="FAMILY">Family-Friendly Adventures<< /option>
+            <option value="GASTRONOMY">Gastronomy & Tasting</option>
+            <option value="UNUSUAL">Original Experiences</option>
+          </select>
+        </fieldset>
+        <h3>Which languages is your tour available in?</h3>
+        <input type="checkbox" id="english" name="english" checked disabled>
+        <label for="english" class="label_languages">
+          <img src="images/uk.svg" class="icon" alt="icon-en">
+        </label>
+        <input type="checkbox" id="french" name="french" checked>
+        <label for="french" class="label_languages">
+          <img src="images/fr.svg" class="icon" alt="icon-fr">
+        </label>
+        <input type="checkbox" id="spanish" name="spanish">
+        <label for="spanish" class="label_languages">
+          <img src="images/es.svg" class="icon" alt="icon-es">
+        </label>
+        <input type="checkbox" id="italian" name="italian" checked>
+        <label for="italian" class="label_languages">
+          <img src="images/it.svg" class="icon" alt="icon-it">
+        </label>
+        <input type="checkbox" id="portuguese" name="portuguese">
+        <label for="portuguese" class="label_languages">
+          <img src="images/br.svg" class="icon" alt="icon-pt">
+        </label>
+        <h3>How long does it last?</h3>
+        <fieldset class="group group_small">
+          <img src="./images/clock.svg" class="icon" alt="icon-clock">
+          <input type="text" id="input_duration" name="duration" placeholder="Duration" autocomplete="off" value="3:00">
+        </fieldset>
+        <h3>How much does it cost?</h3>
+        <fieldset class="group group_small">
+          <img src="./images/dollar-sign.svg" class="icon" alt="icon-clock">
+          <input type="number" name="price" placeholder="Price" autocomplete="off" value="55">
+        </fieldset>
+        <h3>Do you have any photos to illustrate your tour?</h3>
+        <ul class="list_pictures">
+          <li>
+            <a href="/tour/delete-tour-picture/1">
+              <img src="./images/x-circle.svg" class="icon" alt="icon-x">
+            </a>
+            <img src="./images/rome1.jpg" alt="image-tour-picture">
+          </li>
+          <li>
+            <a href="/tour/delete-tour-picture/2">
+              <img src="./images/x-circle.svg" class="icon" alt="icon-x">
+            </a>
+            <img src="./images/rome2.jpg" alt="image-tour-picture">
+          </li>
+          <li>
+            <a href="/tour/delete-tour-picture/3">
+              <img src="./images/x-circle.svg" class="icon" alt="icon-x">
+            </a>
+            <img src="./images/rome3.jpg" alt="image-tour-picture">
+          </li>
+          <li>
+            <a href="/tour/delete-tour-picture/3">
+              <img src="./images/x-circle.svg" class="icon" alt="icon-x">
+            </a>
+            <img src="./images/rome4.jpg" alt="image-tour-picture">
+          </li>
+          <li>
+            <a href="/tour/delete-tour-picture/4">
+              <img src="./images/x-circle.svg" class="icon" alt="icon-x">
+            </a>
+            <img src="./images/rome5.jpg" alt="image-tour-picture">
+          </li>
+        </ul>
+        <fieldset class="group group_medium">
+          <img src="./images/camera.svg" class="icon" alt="icon-camera">
+          <input type="file" name="tour_pictures" accept="image/*" multiple>
+        </fieldset>
+        <button type="submit">
+          <img src="./images/edit-2.svg" class="icon" alt="icon-plus"><span>Apply changes</span></button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <a href="/home/homepage">
+        <img src="./images/home.svg" alt="icon-home">
+      </a>
+      <a href="/guide/profile">
+        <img src="./images/guide.svg" alt="icon-guide">
+      </a>
+    </nav>
+  </footer>
+</body>
+
+</html>

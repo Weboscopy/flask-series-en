@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find your Tour - Profile</title>
+  <link rel="icon" type="image/x-icon" href="./images/guide.ico">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+  <main>
+    <section id="section_profile">
+      <h1>Your profile</h1>
+      <div class="columns">
+        <div class="column">
+          <div class="group">
+            <img src="./images/user.svg" class="icon" alt="icon-user">
+            <span>John Smith</span>
+          </div>
+          <div class="group">
+            <img src="./images/mail.svg" class="icon" alt="icon-mail">
+            <span>john.smith@example.com</span>
+          </div>
+          <div class="group">
+            <p>Adventure guide specializing in outdoor sports, thrilling experiences, and extreme activities designed
+              for adrenaline seekers. From mountain climbing and white-water rafting to paragliding and off-road biking,
+              this guide is perfect for those looking to push their limits and explore nature in its most exhilarating
+              forms.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="profile_picture">
+            <img src="./images/default_profile_picture.png" alt="image-profile-picture">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <form action="/auth/logout" method="GET">
+          <button type="submit">
+            <img src="./images/log-out.svg" class="icon" alt="icon-log-out">
+            <span>Logout</span>
+          </button>
+        </form>
+        <form action="guide/delete-guide/1" method="POST"
+          onsubmit="return confirm('Are you really sure you want to delete your account?');">
+          <button type="submit">
+            <img src="./images/trash-2.svg" class="icon" alt="icon-log-out">
+            <span>Delete account</span>
+          </button>
+        </form>
+      </div>
+      <h3>Your tours</h3>
+      <aside>
+        <div class="column">
+          <a href="/tour/view-tour/1">
+            <div class="column_left">
+              <img src="./images/rome1.jpg" alt="image-tour-picture">
+            </div>
+            <div class="column_right">
+              <h4>Colosseum Chronicles: Rome’s Iconic Amphitheater</h4>
+            </div>
+          </a>
+          <a href="/tour/view-tour/2">
+            <div class="column_left">
+              <img src="./images/rome2.jpg" alt="image-tour-picture">
+            </div>
+            <div class="column_right">
+              <h4>Pantheon Through the Ages</h4>
+            </div>
+          </a>
+          <a href="/tour/view-tour/3">
+            <div class="column_left">
+              <img src="./images/rome3.jpg" alt="image-tour-picture">
+            </div>
+            <div class="column_right">
+              <h4>Coins, Wishes, and Secrets: The Trevi Experience</h4>
+            </div>
+          </a>
+          <a href="/tour/view-tour/4">
+            <div class="column_left">
+              <img src="./images/rome4.jpg" alt="image-tour-picture">
+            </div>
+            <div class="column_right">
+              <h4>The Forum Unveiled: The Rise of Rome</h4>
+            </div>
+          </a>
+          <a href="/tour/view-tour/5">
+            <div class="column_left">
+              <img src="./images/rome5.jpg" alt="image-tour-picture">
+            </div>
+            <div class="column_right">
+              <h4>Echoes of the Empire: A Walk Through Ancient Rome</h4>
+            </div>
+          </a>
+        </div>
+        <a href="/tour/create-tour">
+          <button>
+            <img src="./images/plus-circle.svg" class="icon" alt="icon-plus-circle">
+            <span>Add</span>
+          </button>
+        </a>
+      </aside>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <a href="/home/homepage">
+        <img src="./images/home.svg" alt="icon-home">
+      </a>
+      <a href="/guide/profile" class="active">
+        <img src="./images/guide.svg" alt="icon-guide">
+      </a>
+    </nav>
+  </footer>
+</body>
+
+</html>

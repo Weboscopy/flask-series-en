@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find your Tour - Login</title>
+  <link rel="icon" type="image/x-icon" href="./images/guide.ico">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+  <main>
+    <section id="section_login">
+      <h1>Login as a guide</h1>
+      <form action="/auth/login" method="POST">
+        <h3>What's your email address?</h3>
+        <fieldset class="group">
+          <img src="./images/mail.svg" class="icon" alt="icon-mail">
+          <input type="email" name="email" placeholder="Your email" autocomplete="off">
+        </fieldset>
+        <h3>What's your password?</h3>
+        <fieldset class="group">
+          <img src="./images/lock.svg" class="icon" alt="icon-lock">
+          <input type="password" name="password" placeholder="Your password" autocomplete="off">
+        </fieldset>
+        <h3>Remember me?</h3>
+        <input type="checkbox" name="remember">
+        <button type="submit">
+          <img src="./images/log-in-2.svg" class="icon" alt="icon-log-in">
+          <span>Login</span>
+        </button>
+      </form>
+      <div class="row">
+        <a href="/auth/register"><img src="./images/user-plus.svg" class="icon" alt="icon-user-plus"> Create an account</a>
+        <a href="/auth/reset-request"><img src="./images/help-circle.svg" class="icon" alt="icon-help-circle"> Forgot password?</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <a href="/home/homepage">
+        <img src="./images/home.svg" alt="icon-home">
+      </a>
+      <a href="/guide/profile">
+        <img src="./images/guide.svg" alt="icon-guide">
+      </a>
+    </nav>
+  </footer>
+</body>
+
+</html>

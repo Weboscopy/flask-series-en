@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find your Tour - Forgot password</title>
+  <link rel="icon" type="image/x-icon" href="./images/guide.ico">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+  <main>
+    <section id="section_reset_request">
+      <h1>Forgot password?</h1>
+      <form action="/auth/reset-request" method="POST">
+        <h3>What is your email address?</h3>
+        <fieldset class="group">
+          <img src="./images/mail.svg" class="icon" alt="icon-mail">
+          <input type="email" name="email" placeholder="Your email" autocomplete="off">
+        </fieldset>
+        <button type="submit">
+          <img src="./images/chevron-right.svg" class="icon" alt="icon-chevron">
+          <span>Send</span>
+        </button>
+      </form>
+      <a href="/auth/login"><img src="./images/log-in.svg" class="icon" alt="icon-log-in">Login</a>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <a href="/home/homepage">
+        <img src="./images/home.svg" alt="icon-home">
+      </a>
+      <a href="/guide/profile">
+        <img src="./images/guide.svg" alt="icon-guide">
+      </a>
+    </nav>
+  </footer>
+</body>
+
+</html>
