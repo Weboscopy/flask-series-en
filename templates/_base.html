@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Find your Tour {% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='assets/images/guide.ico')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css')}}">
+    <script defer src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="{{url_for('static', filename='assets/js/main.js')}}"></script>
+</head>
+
+<body>
+    <div class="notification_column">
+        <div class="notification danger">
+            You do not have access to this resource...
+            <div class="border"></div>
+        </div>
+        <div class="notification info">
+            A new document has been added!
+            <div class="border"></div>
+        </div>
+        <div class="notification success">
+            Your changes have been applied!
+            <div class="border"></div>
+        </div>
+    </div>
+
+    {% block page_content %}
+    {% endblock %}
+
+    <footer>
+        <nav>
+            <a href="{{url_for('home')}}" class="active">
+                <img src="{{url_for('static', filename='assets/images/home.svg')}}" alt="icon-home">
+            </a>
+            <a href="/guide/profile">
+                <img src="{{url_for('static', filename='assets/images/guide.svg')}}" alt="icon-guide">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+{% extends '_base.html' %}
+
+{% block title %}
+Find your Tour - Home
+{% endblock %}
+
+
+{% block page_content %}
+<main>
+  <section id="section_register">
+    <h1>Create a guide account</h1>
+    <form action="/auth/register" method="POST" enctype="multipart/form-data">
+      <h3>What will your username be?</h3>
+      <fieldset class="group">
+        <img src="{{url_for('static', filename='assets/images/user.svg')}}" class="icon" alt="icon-user">
+        <input type="text" name="username" placeholder="Your username" autocomplete="off">
+      </fieldset>
+      <h3>Tell us a few words about yourself...</h3>
+      <fieldset class="group">
+        <img src="{{url_for('static', filename='assets/images/align-left.svg')}}" class="icon icon-flex-start"
+          alt="icon-type">
+        <textarea name="bio" placeholder="Your bio"></textarea>
+      </fieldset>
+      <h3>Choose your profile picture</h3>
+      <fieldset class="group ">
+        <img src="{{url_for('static', filename='assets/images/camera.svg')}}" class="icon" alt="icon-camera">
+        <input type="file" name="profile_picture" accept="image/*">
+      </fieldset>
+      <h3>What's your email address?</h3>
+      <fieldset class="group">
+        <img src="{{url_for('static', filename='assets/images/mail.svg')}}" class="icon" alt="icon-mail">
+        <input type="email" name="email" placeholder="Your email" autocomplete="off">
+      </fieldset>
+      <h3>Enter your password</h3>
+      <fieldset class="group">
+        <img src="{{url_for('static', filename='assets/images/lock.svg')}}" class="icon" alt="icon-lock">
+        <input type="password" name="password" placeholder="Your password" autocomplete="off">
+      </fieldset>
+      <h3>Can you confirm your password?</h3>
+      <fieldset class="group">
+        <img src="{{url_for('static', filename='assets/images/key.svg')}}" class="icon" alt="icon-key">
+        <input type="password" name="confirm_password" placeholder="Confirm password" autocomplete="off">
+      </fieldset>
+      <button type="submit">
+        <img src="{{url_for('static', filename='assets/images/user-plus-2.svg')}}" class="icon" alt="icon-log-in">
+        <span>Create your account</span>
+      </button>
+    </form>
+    <a href="{{url_for('login')}}"><img src="{{url_for('static', filename='assets/images/log-in.svg')}}" class="icon"
+        alt="icon-log-in"> Already have an account?</a>
+  </section>
+</main>
+{% endblock %}

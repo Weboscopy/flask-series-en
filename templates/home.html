@@ -1,0 +1,163 @@
+{% extends '_base.html' %}
+
+{% block title %}
+Find your Tour - Home
+{% endblock %}
+
+
+{% block page_content %}
+
+<header class="header_home">
+  <img src="{{url_for('static', filename='assets/images/adventure_map.svg')}}" alt="image-adeventure-map">
+  <form action="/tour/list-tours" class="form_search" method="GET">
+    <fieldset class="group group_suggestions">
+      <img src="{{url_for('static', filename='assets/images/map-pin.svg')}}" class="icon" alt="icon-location">
+      <input type="text" id="input_city" name="city" placeholder="City" autocomplete="off">
+      <ul class="list_suggestions" id="suggestions_city">
+      </ul>
+    </fieldset>
+    <fieldset class="group">
+      <img src="{{url_for('static', filename='assets/images/calendar.svg')}}" class="icon" alt="icon-calendar">
+      <input type="date" id="input_date" name="date" placeholder="Date" autocomplete="off">
+    </fieldset>
+    <fieldset class="group">
+      <img class="icon" src="{{url_for('static', filename='assets/images/list.svg')}}" alt="icon-list">
+      <select name="category">
+        <option value="" disabled selected>Categories</option>
+        <option value="CULTURE">Cultural Outings</option>
+        <option value="NATURE">100% Nature Walks</option>
+        <option value="DRAMA">Dramatized Visits</option>
+        <option value="FAMILY">Family-Friendly Adventures</option>
+        <option value="GASTRONOMY">Gastronomy & Tasting</option>
+        <option value="UNUSUAL">Original Experiences</option>
+      </select>
+    </fieldset>
+    <button type="submit" class="btn_search">
+      <img src="{{url_for('static', filename='assets/images/search.svg')}}" class="icon" alt="icon-search">
+      <span>Search</span>
+    </button>
+  </form>
+</header>
+<main>
+  <section id="section_soon">
+    <h1>Upcoming tours</h1>
+    <div class="swiper" id="swiper_soon">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="/tour/view-tour/1">
+            <img src="{{url_for('static', filename='assets/images/rome1.jpg')}}" alt="image-tour-picture">
+            <div class="swiper_info">
+              <h2>Colosseum Chronicles: Rome’s Iconic Amphitheater</h2>
+              <time><img src="{{url_for('static', filename='assets/images/calendar.svg')}}" class="icon"
+                  alt="icon-calendar">September 10th</time>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="/tour/view-tour/2">
+            <img src="{{url_for('static', filename='assets/images/rome2.jpg')}}" alt="image-tour-picture">
+            <div class="swiper_info">
+              <h2>Pantheon Through the Ages</h2>
+              <time><img src="{{url_for('static', filename='assets/images/calendar.svg')}}" class="icon"
+                  alt="icon-calendar">September 18th</time>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="tour/view-tour/3">
+            <img src="{{url_for('static', filename='assets/images/rome3.jpg')}}" alt="image-tour-picture">
+            <div class="swiper_info">
+              <h2>Coins, Wishes, and Secrets: The Trevi Experience</h2>
+              <time><img src="{{url_for('static', filename='assets/images/calendar.svg')}}" class="icon"
+                  alt="icon-calendar">September 20th</time>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="/tour/view-tour/4">
+            <img src="{{url_for('static', filename='assets/images/rome4.jpg')}}" alt="image-tour-picture">
+            <div class="swiper_info">
+              <h2>The Forum Unveiled: The Rise of Rome</h2>
+              <time><img src="{{url_for('static', filename='assets/images/calendar.svg')}}" class="icon"
+                  alt="icon-calendar">October 14th</time>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="tour/view-tour/5">
+            <img src="{{url_for('static', filename='assets/images/rome5.jpg')}}" alt="image-tour-picture">
+            <div class="swiper_info">
+              <h2>Echoes of the Empire: A Walk Through Ancient Rome</h2>
+              <time><img class="icon" src="{{url_for('static', filename='assets/images/calendar.svg')}}"
+                  alt="icon-clock">October 20th</time>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <a href="/tour/list-tours"><img src="{{url_for('static', filename='assets/images/link.svg')}}" class="icon"
+        alt="icon-link"> See all</a>
+  </section>
+  <section id="section_categories">
+    <h1>Categories</h1>
+    <div class="columns">
+      <div class="column">
+        <a href="/tour/list-tours?category=culture">
+          <div class="column_left">
+            <img src="{{url_for('static', filename='assets/images/culture.jpg')}}" alt="image-category-culture">
+          </div>
+          <div class="column_right">
+            <h4>Cultural Outings</h4>
+          </div>
+        </a>
+        <a href="/tour/list-tours?category=nature">
+          <div class="column_left">
+            <img src="{{url_for('static', filename='assets/images/nature.jpg')}}" alt="image-category-nature">
+          </div>
+          <div class="column_right">
+            <h4>100% Nature Walks</h4>
+          </div>
+        </a>
+        <a href="/tour/list-tours?category=drama">
+          <div class="column_left">
+            <img src="{{url_for('static', filename='assets/images/drama.jpg')}}" alt="image-category-drama">
+          </div>
+          <div class="column_right">
+            <h4>Dramatized Visits</h4>
+          </div>
+        </a>
+      </div>
+      <div class="column">
+        <a href="/tour/list-tours?category=family">
+          <div class="column_left">
+            <img src="{{url_for('static', filename='assets/images/family.jpg')}}" alt="image-category-family">
+          </div>
+          <div class="column_right">
+            <h4>Family-Friendly Adventures</h4>
+          </div>
+        </a>
+        <a href="/tour/list-tours?category=gastronomy">
+          <div class="column_left">
+            <img src="{{url_for('static', filename='assets/images/gastronomy.jpg')}}" alt="image-category-gastronomy">
+          </div>
+          <div class="column_right">
+            <h4>Gastronomy & Tasting</h4>
+          </div>
+        </a>
+        <a href="/tour/list-tours?category=unusual">
+          <div class="column_left">
+            <img src="{{url_for('static', filename='assets/images/unusual.jpg')}}" alt="image-categoru-unusual">
+          </div>
+          <div class="column_right">
+            <h4>Original Experiences</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+    <a href="/tour/list-tours"><img src="{{url_for('static', filename='assets/images/link.svg')}}" class="icon"
+        alt="icon-link"> See all</a>
+  </section>
+</main>
+
+{% endblock %}

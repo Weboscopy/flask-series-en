@@ -1,0 +1,38 @@
+{% extends '_base.html' %}
+
+{% block title %}
+Find your Tour - Home
+{% endblock %}
+
+
+{% block page_content %}
+<main>
+  <section id="section_login">
+    <h1>Login as a guide</h1>
+    <form action="/auth/login" method="POST">
+      <h3>What's your email address?</h3>
+      <fieldset class="group">
+        <img src="{{url_for('static', filename='assets/images/mail.svg')}}" class="icon" alt="icon-mail">
+        <input type="email" name="email" placeholder="Your email" autocomplete="off">
+      </fieldset>
+      <h3>What's your password?</h3>
+      <fieldset class="group">
+        <img src="{{url_for('static', filename='assets/images/lock.svg')}}" class="icon" alt="icon-lock">
+        <input type="password" name="password" placeholder="Your password" autocomplete="off">
+      </fieldset>
+      <h3>Remember me?</h3>
+      <input type="checkbox" name="remember">
+      <button type="submit">
+        <img src="{{url_for('static', filename='assets/images/log-in-2.svg')}}" class="icon" alt="icon-log-in">
+        <span>Login</span>
+      </button>
+    </form>
+    <div class="row">
+      <a href="{{url_for('register')}}"><img src="{{url_for('static', filename='assets/images/user-plus.svg')}}" class="icon" alt="icon-user-plus"> Create an
+        account</a>
+      <a href="/auth/reset-request"><img src="{{url_for('static', filename='assets/images/help-circle.svg')}}" class="icon" alt="icon-help-circle"> Forgot
+        password?</a>
+    </div>
+  </section>
+</main>
+{% endblock %}
