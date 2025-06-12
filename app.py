@@ -1,22 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask
+from controllers.home import home_bp
+from controllers.auth import auth_bp
 
 
 app = Flask(__name__)
 
 
-@app.route("/")
-def home():
-    return render_template("home.html")
-
-
-@app.route("/auth/register")
-def register():
-    return render_template("auth/register.html")
-
-
-@app.route("/auth/login")
-def login():
-    return render_template("auth/login.html")
+app.register_blueprint(auth_bp, url_prefix="/auth")
+app.register_blueprint(home_bp, url_prefix="/")
 
 
 if __name__ == "__main__":

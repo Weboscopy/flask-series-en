@@ -46,8 +46,8 @@ Find your Tour - Register
         <span>Create your account</span>
       </button>
     </form>
-    <a href="{{url_for('login')}}"><img src="{{url_for('static', filename='assets/images/log-in.svg')}}" class="icon"
-        alt="icon-log-in"> Already have an account?</a>
+    <a href="{{url_for('auth.login')}}"><img src="{{url_for('static', filename='assets/images/log-in.svg')}}"
+        class="icon" alt="icon-log-in"> Already have an account?</a>
   </section>
 </main>
 {% endblock %}
